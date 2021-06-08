@@ -1,0 +1,35 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}px|
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+/* ---- particles.js container ---- https://img.freepik.com/vector-gratis/diseno-fondo-bokeh-borrosa-suave_1017-14457.jpg?size=626&ext=jpg */
+
+#particles-js{
+  background: url(https://fondosmil.com/fondo/460.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  }
+  

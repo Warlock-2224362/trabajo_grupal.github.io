@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  	
+ 	<link rel="stylesheet" media="screen" href="css/style.css">
+    <title>Formulario de contacto</title>
+  </head>
+  <body>
+	<!-- particles.js container -->
+	<div id="particles-js"></div>
+	<style>
+    #divfijobanner table{
+        width:100%; border-collapse:0; border-spacing:0; border:0px;
+    }
+    #divfijobanner table td{
+        margin-left:5%; background-color:#138fcb;color:#FFF
+    }
+    .sub-title{
+        background-color:#1fbaea;
+        text-align:right;
+        font-size:14px;
+        color:#fff
+    }
+    .sub-title td{
+        background-color:transparent !important;
+    }
+	  #NombrePagina2{ font-size:18px; padding-left:30px;}
+	  #TipoAccionGlobal{ text-align:left; padding-left:30px;}
+	  #NombreColegio{ font-size:18px;text-align:right;}
+	  .InfoUsuario{color:#FFF}
+	  #Cabecera {
+	    padding:9px 15px;
+	    border-bottom:1px solid #eee;
+	    background-color: #0480be;
+	    -webkit-border-top-left-radius: 5px;
+	    -webkit-border-top-right-radius: 5px;
+	    -moz-border-radius-topleft: 5px;
+	    -moz-border-radius-topright: 5px;
+	     border-top-left-radius: 5px;
+	     border-top-right-radius: 5px;
+	     color:white;
+	     text-align: center;
+	  }
+		</style>
+		<!--Este SCRIPT es para que la ventana modal se inicie automáticamente-->
+		<script>
+		     $(document).ready(function()
+		   {
+		      $("#myModal").modal("show");
+		   });
+		   setTimeout(function() { $('#myModal').modal('hide'); }, 4000);
+		</script>
+		<div id="divfijobanner">
+		<table>
+		    <tbody><tr>
+		      <td width="450" height="50" id="NombrePagina2">Trabajo Node JS - Javascript</td>
+		      <td width="793" id="NombreColegio">Primer desarrollo Fullstack</td>
+		      <td width="22">&nbsp;</td>
+		    </tr>
+		  <tr><td colspan="3"></td>
+		    </tr>
+		          <tr class="sub-title">
+		      <td height="23" id="TipoAccionGlobal"></td>
+		      <td class="InfoUsuario">
+		          </td>
+		      <td>&nbsp;</td>
+		    </tr>
+		  </tbody></table>
+		</div>    <br>
+
+		<div class="container p-5">
+        <div class="row">
+            <div class="col-sm-12 mx-auto col-md-8 col-lg-5">
+                <div class="card">
+								  <h3 class="card-header card text-black text-center bg-warning mb-3">Formulario de contacto</h3>
+								  <div class="card-body">
+								    <form action="/send-mail" method="POST">
+                      <div class="form-group">
+                          <input type="text" name="name" placeholder="Ingrese su nombre" class="form-control"/>
+                      </div><br>
+                      <div class="form-group">
+                          <input type="email"  name="email" placeholder="Ingrese su correo electrónico" class="form-control"/>
+                      </div><br>
+                      <div class="form-group">
+                          <input type="text"  name="celular" placeholder="Ingrese su teléfono" class="form-control"/>
+                      </div><br>
+                      <!-- <div class="form-group">
+                          <textarea name="message" rows="6" class="form-control" placeholder="Escriba su mensaje"></textarea>
+                      </div> -->
+                      <hr>
+                     <center><input type="submit" value="Enviar" class="btn btn-primary" name=""></center>
+								  </div>
+								 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- scripts -->
+	<script src="../particles.js"></script>
+	<script src="js/app.js"></script>
+
+	<!-- stats.js -->
+	<!-- <script src="js/lib/stats.js"></script>
+	<script>
+	  var count_particles, stats, update;
+	  stats = new Stats;
+	  stats.setMode(0);
+	  stats.domElement.style.position = 'absolute';
+	  stats.domElement.style.left = '0px';
+	  stats.domElement.style.top = '0px';
+	  document.body.appendChild(stats.domElement);
+	  count_particles = document.querySelector('.js-count-particles');
+	  update = function() {
+	    stats.begin();
+	    stats.end();
+	    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+	      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+	    }
+	    requestAnimationFrame(update);
+	  };
+	  requestAnimationFrame(update);
+	</script> -->
+
+    <script src="particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
